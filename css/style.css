@@ -1,0 +1,127 @@
+/*Link font family Roboto from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+/*initialisation*/
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  color: #747474;
+}
+*::selection {
+  background-color: #00b39b;
+  color: white;
+}
+/******************Css for header*********************/
+.head_menu_container {
+  width: 100%;
+  height: 80px;
+
+  position: fixed;
+
+  background: hsla(0, 0%, 100%, 0.98);
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.15);
+  z-index: 5;
+
+  top: 0;
+}
+
+.head_menu {
+  /* width: 995px; */
+  margin: auto;
+  height: 80px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-between;
+}
+
+.head_menu .logo_docplanner {
+  width: 250px;
+  height: 80px;
+}
+
+.navmenu_list {
+  list-style-type: none;
+  display: flex;
+
+  position: relative;
+  color: #747474;
+}
+.navmenu_list li {
+  margin: auto 15px;
+  padding: 15px 5px;
+}
+.navmenu_list a {
+  text-decoration: none;
+  color: #747474;
+}
+.navmenu_list a:hover {
+  text-decoration: none;
+  color: #00b39b;
+}
+
+.navmenu_list a:focus {
+  text-decoration: none;
+  color: #00b39b;
+}
+.navmenu_list li:nth-child(3):hover {
+  color: #00b39b;
+  cursor: pointer;
+}
+
+.downmenu {
+  display: none;
+
+  flex-direction: column;
+  width: 240px;
+  list-style: none;
+  background: #fff;
+  margin-top: 10px;
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  padding-left: 0;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13), -1px -1px 5px rgba(0, 0, 0, 0.13),
+    4px 4px 5px rgba(0, 0, 0, 0.1), -4px -4px 5px rgba(0, 0, 0, 0.1);
+}
+.navmenu_list li:nth-child(3):hover .downmenu {
+  display: flex;
+}
+.downmenu a:hover {
+  background: #d7f6f649;
+}
+
+/*intro css*/
+main {
+  margin-top: 150px;
+}
+#mainTitle {
+  color: #00b39b;
+  font-weight: lighter;
+  font-size: x-large;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items: center;
+  margin: 20px 10%;
+}
+.intro div {
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.75;
+}
+div > p:first-child {
+  margin-right: 2%;
+}
+div > p:nth-child(2) {
+  margin-left: 2%;
+}
